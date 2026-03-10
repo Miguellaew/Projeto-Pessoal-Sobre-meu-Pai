@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Lima | Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>/* Reset e Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Branco */
+    color: #000000; /* Preto */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #000000;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    color: #eeeeee;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666666; /* Cinza */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #eeeeee !important;
+    font-weight: bold;
+}
+
+.social-icons span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #eeeeee;
+}
+
+/* Layout de Colunas */
+.grid-container {
+    display: flex;
+    height: 80vh;
+    padding: 20px 50px;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+    filter: grayscale(0%); /* Mantém cores originais */
+}
+
+/* Texto Central */
+.col-center {
+    flex: 1.5; /* A coluna central é um pouco mais larga */
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text {
+    background: white;
+    padding: 30px 0;
+    text-align: left;
+    background-color: #000000;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-family: serif;
+    background-color: #000000;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Estilização da Seção Sobre/História */
+.bio-section {
+    background-color: #f9f9f9; /* Um cinza bem claro para diferenciar do fundo branco */
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bio-content {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.bio-text h2 {
+    font-size: 32px;
+    font-family: serif;
+    margin-bottom: 40px;
+    border-left: 5px solid #000;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas */
+    gap: 40px;
+}
+
+.bio-item h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333; /* Cinza escuro */
+    text-transform: uppercase;
+}
+
+.bio-item p {
+    line-height: 1.6;
+    color: #666; /* Cinza médio */
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* Rodapé */
+.footer-simple {
+    text-align: center;
+    padding: 40px;
+    background-color: #000000;
+    border-top: 1px solid #eeeeee;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .bio-grid {
+        grid-template-columns: 1fr; /* Coluna única no celular */
+    }
+    .bio-section {
+        padding: 40px 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Anderson Lima</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <!-- Ícones simplificados -->
+            <span>f</span> <span>r</span> <span>e</span> <span>d</span>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <div class="column col-left">
+            <img src="Capturas de tela/481970886_1194927762253019_6584733827729514103_n.jpg" alt="Espaço de trabalho">
+        </div>
+        
+        <div class="column col-center">
+            <img src="Capturas de tela/554578343_1353949836350810_7247217897234857640_n.jpg" alt="Foto Anderson Lima">
+            <div class="hero-text">
+                <h1>Tudo Sobre o Baiano de Macajuba.</h1>
+            </div>
+        </div>
+
+        <div class="column col-right">
+            <img src="Capturas de tela/484279700_1201837171562078_3890694151241588838_n.jpg" alt="Planta decorativa">
+        </div>
+    </main>
+
+        <!-- Nova Seção de Informações -->
+    <section class="bio-section">
+        <div class="bio-content">
+            <div class="bio-text">
+                <h2>Sobre Anderson Lima</h2>
+                <div class="bio-grid">
+                    <div class="bio-item">
+                        <h3>Minha História</h3>
+                        <p>Um Nordestino cheio de metas e sonhos, e com muita determinação para mudar de vida, ajudava seu pai (Bernardo) na roça. Até que seu irmão (Evandro) resolveu chama-lo para São Paulo em 2001 para trabalhar e tentar a vida na cidade grande. <a href="#" style="text-decoration: none;">Saiba mais sobre sua Historia</a>.</p>
+                    </div>
+                    <div class="bio-item">
+                        <h3>Origem</h3>
+                        <p>Nascido em Macajuba, Bahia, traz as sua cultura e influências da sua terra natal para cada trabalho que desenvolve, buscando sempre o equilíbrio entre o moderno e o tradicional.</p>
+                    </div>
+                    <div class="bio-item">
+                        <h3>Competências</h3>
+                        <p>Compartilhar conhecimento, inspirare criar um legado onde o conteúdo de qualidade é a prioridade máxima.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-simple">
+        <p>&copy; 2026 Anderson Lima. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>
